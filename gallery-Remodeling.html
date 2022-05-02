@@ -1010,7 +1010,7 @@
 <div
     x-data="{
         activeImage: 0,
-        amountOfImages: 10,
+        amountOfImages: 9,
         next() {
             if (this.activeImage < this.amountOfImages - 1)
                 this.activeImage ++;
@@ -1073,27 +1073,6 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 2; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3ca05d42-8cf1-4a77-a4ee-3cb30a63e76b.jpeg" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/3ca05d42-8cf1-4a77-a4ee-3cb30a63e76b.jpeg" alt="Remodeling for CV Renovations in Brownwood, TX" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3ca05d42-8cf1-4a77-a4ee-3cb30a63e76b.jpeg" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/3ca05d42-8cf1-4a77-a4ee-3cb30a63e76b.jpeg" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5d702cab-70e8-423c-bf8f-ff10ebd7cf0d.jpeg" alt="" /> -->
                              
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/5d702cab-70e8-423c-bf8f-ff10ebd7cf0d.jpeg" alt="Remodeling for CV Renovations in Brownwood, TX" loading="lazy"/> 
@@ -1113,7 +1092,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/61c62192-0edf-41a4-858f-3c4516000d0a.jpeg" alt="" /> -->
                              
@@ -1134,7 +1113,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 5; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bab74593-6c9c-4e9d-9a91-b415943fbe76.jpeg" alt="" /> -->
                              
@@ -1155,7 +1134,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 6; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 5; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e8cfb151-9c07-4880-b44e-7642f69d8eef.jpeg" alt="" /> -->
                              
@@ -1176,7 +1155,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 7; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 6; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f588b608-450b-4bd5-bd6c-c40aaca5e58c.jpeg" alt="" /> -->
                              
@@ -1197,7 +1176,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 8; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 7; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2cb67f1e-4f6c-4eaf-8170-5004a796bc09.jpeg" alt="" /> -->
                              
@@ -1218,7 +1197,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 9; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 8; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e39da8a6-3c4b-413b-9a76-cfde5d119719.jpeg" alt="" /> -->
                              
@@ -1303,7 +1282,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 2">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3ca05d42-8cf1-4a77-a4ee-3cb30a63e76b.jpeg" alt="Remodeling for CV Renovations in Brownwood, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5d702cab-70e8-423c-bf8f-ff10ebd7cf0d.jpeg" alt="Remodeling for CV Renovations in Brownwood, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1311,7 +1290,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 3">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5d702cab-70e8-423c-bf8f-ff10ebd7cf0d.jpeg" alt="Remodeling for CV Renovations in Brownwood, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/61c62192-0edf-41a4-858f-3c4516000d0a.jpeg" alt="Remodeling for CV Renovations in Brownwood, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1319,7 +1298,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 4">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/61c62192-0edf-41a4-858f-3c4516000d0a.jpeg" alt="Remodeling for CV Renovations in Brownwood, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bab74593-6c9c-4e9d-9a91-b415943fbe76.jpeg" alt="Remodeling for CV Renovations in Brownwood, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1327,7 +1306,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 5">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bab74593-6c9c-4e9d-9a91-b415943fbe76.jpeg" alt="Remodeling for CV Renovations in Brownwood, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e8cfb151-9c07-4880-b44e-7642f69d8eef.jpeg" alt="Remodeling for CV Renovations in Brownwood, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1335,7 +1314,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 6">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e8cfb151-9c07-4880-b44e-7642f69d8eef.jpeg" alt="Remodeling for CV Renovations in Brownwood, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f588b608-450b-4bd5-bd6c-c40aaca5e58c.jpeg" alt="Remodeling for CV Renovations in Brownwood, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1343,21 +1322,13 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 7">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f588b608-450b-4bd5-bd6c-c40aaca5e58c.jpeg" alt="Remodeling for CV Renovations in Brownwood, TX" loading="lazy"/>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <!-- Transition Wrapper 1 -->
-                                    <li class="flex flex-col" x-show="activeImage === 8">
-                                            
                                             <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2cb67f1e-4f6c-4eaf-8170-5004a796bc09.jpeg" alt="Remodeling for CV Renovations in Brownwood, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
                                 
                                     <!-- Transition Wrapper 1 -->
-                                    <li class="flex flex-col" x-show="activeImage === 9">
+                                    <li class="flex flex-col" x-show="activeImage === 8">
                                             
                                             <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e39da8a6-3c4b-413b-9a76-cfde5d119719.jpeg" alt="Remodeling for CV Renovations in Brownwood, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
@@ -1804,57 +1775,57 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-187890"
-                                                    name="187890"
+                                                    id="contact-service-199900"
+                                                    name="199900"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Full Builds"
                                             />
-                                            <label for="contact-label-service-187890" class="ml-3 text-sm font-medium text-gray-700">Full Builds</label>
+                                            <label for="contact-label-service-199900" class="ml-3 text-sm font-medium text-gray-700">Full Builds</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-187891"
-                                                    name="187891"
+                                                    id="contact-service-199901"
+                                                    name="199901"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Bathroom Renovation"
                                             />
-                                            <label for="contact-label-service-187891" class="ml-3 text-sm font-medium text-gray-700">Bathroom Renovation</label>
+                                            <label for="contact-label-service-199901" class="ml-3 text-sm font-medium text-gray-700">Bathroom Renovation</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-187892"
-                                                    name="187892"
+                                                    id="contact-service-199902"
+                                                    name="199902"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Major Remodels"
                                             />
-                                            <label for="contact-label-service-187892" class="ml-3 text-sm font-medium text-gray-700">Major Remodels</label>
+                                            <label for="contact-label-service-199902" class="ml-3 text-sm font-medium text-gray-700">Major Remodels</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-187893"
-                                                    name="187893"
+                                                    id="contact-service-199903"
+                                                    name="199903"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Home Additions"
                                             />
-                                            <label for="contact-label-service-187893" class="ml-3 text-sm font-medium text-gray-700">Home Additions</label>
+                                            <label for="contact-label-service-199903" class="ml-3 text-sm font-medium text-gray-700">Home Additions</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-187894"
-                                                    name="187894"
+                                                    id="contact-service-199904"
+                                                    name="199904"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="General Contracting"
                                             />
-                                            <label for="contact-label-service-187894" class="ml-3 text-sm font-medium text-gray-700">General Contracting</label>
+                                            <label for="contact-label-service-199904" class="ml-3 text-sm font-medium text-gray-700">General Contracting</label>
                                         </div>
                                         
                                     </div>
@@ -1885,57 +1856,57 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-187890"
-                                                    name="187890"
+                                                    id="contact-service-199900"
+                                                    name="199900"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Full Builds"
                                             />
-                                            <label for="contact-label-service-187890" class="ml-3 text-sm font-medium text-gray-700">Full Builds</label>
+                                            <label for="contact-label-service-199900" class="ml-3 text-sm font-medium text-gray-700">Full Builds</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-187891"
-                                                    name="187891"
+                                                    id="contact-service-199901"
+                                                    name="199901"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Bathroom Renovation"
                                             />
-                                            <label for="contact-label-service-187891" class="ml-3 text-sm font-medium text-gray-700">Bathroom Renovation</label>
+                                            <label for="contact-label-service-199901" class="ml-3 text-sm font-medium text-gray-700">Bathroom Renovation</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-187892"
-                                                    name="187892"
+                                                    id="contact-service-199902"
+                                                    name="199902"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Major Remodels"
                                             />
-                                            <label for="contact-label-service-187892" class="ml-3 text-sm font-medium text-gray-700">Major Remodels</label>
+                                            <label for="contact-label-service-199902" class="ml-3 text-sm font-medium text-gray-700">Major Remodels</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-187893"
-                                                    name="187893"
+                                                    id="contact-service-199903"
+                                                    name="199903"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Home Additions"
                                             />
-                                            <label for="contact-label-service-187893" class="ml-3 text-sm font-medium text-gray-700">Home Additions</label>
+                                            <label for="contact-label-service-199903" class="ml-3 text-sm font-medium text-gray-700">Home Additions</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-187894"
-                                                    name="187894"
+                                                    id="contact-service-199904"
+                                                    name="199904"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="General Contracting"
                                             />
-                                            <label for="contact-label-service-187894" class="ml-3 text-sm font-medium text-gray-700">General Contracting</label>
+                                            <label for="contact-label-service-199904" class="ml-3 text-sm font-medium text-gray-700">General Contracting</label>
                                         </div>
                                         
                                     </div>
